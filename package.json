@@ -1,0 +1,31 @@
+{
+  "name": "jarabarbershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1993moustafa/jarabarbershop.git"
+  },
+  "author": "Moustafa OMar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1993moustafa/jarabarbershop/issues"
+  },
+  "homepage": "https://github.com/1993moustafa/jarabarbershop#readme",
+  "dependencies": {
+    "gulp-clean-css": "^4.2.0",
+    "gulp-install": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch-sass": "^1.4.1",
+    "node-sass": "^4.12.0"
+  }
+}
