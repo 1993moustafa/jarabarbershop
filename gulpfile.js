@@ -13,9 +13,6 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
   return gulp.src('./style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(sourcemaps.init())
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./'))
 });
 
