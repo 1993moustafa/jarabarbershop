@@ -5,6 +5,10 @@
   h1 {
     font-family: 'Playfair Display', serif;
     color: $santafe;
+    @include media-breakpoint-down(lg) {
+      font-size: 50px;
+    }
+
   }
   .lead {
     color: $white;

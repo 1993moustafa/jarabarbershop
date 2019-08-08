@@ -260,3 +260,51 @@ function flhm_wp_html_compression_start()
   ob_start('flhm_wp_html_compression_finish');
 }
 add_action('get_header', 'flhm_wp_html_compression_start');
+// END COMPRESS HTML
+
+
+function wp_nav_menu_no_ul()
+{
+  $options = array(
+    'echo' => false,
+    'container' => false,
+    'theme_location' => 'my-custom-menu'
+  );
+
+  $menu = wp_nav_menu($options);
+  echo preg_replace(array(
+    '#^<ul[^>]*>#',
+    '#</ul>$#'
+  ), '', $menu);
+}
+
+add_filter('wp_nav_menu', create_function('$t', 'return str_replace("<li ", "<li class=\"nav-item\" ", $t);'));
+add_filter('wp_nav_menu', create_function('$t', 'return str_replace("<a ", "<a class=\"nav-link js-scroll-trigger pl-2 pr-2 pt-3 pb-3\" ", $t);'));
+
+add_filter('wp_nav_menu', 'strip_empty_classes');
+function strip_empty_classes($menu)
+{
+  $menu = preg_replace('/ id=(["\'])(?!active).*?\1/', '', $menu);
+  return $menu;
+}
+
+
+add_filter('nav_menu_css_class', 'clear_nav_menu_item_class', 10, 3);
+function clear_nav_menu_item_class($classes, $item, $args)
+{
+  return array();
+}
+
+function wp_nav_menu_remove_attributes($menu)
+{
+  return $menu = preg_replace('/ id=\"(.*)\" class=\"(.*)\"/iU', '', $menu);
+}
+add_filter('wp_nav_menu', 'wp_nav_menu_remove_attributes');
+
+
+function wpb_custom_new_menu()
+{
+  register_nav_menu('my-custom-menu', __('My Custom Menu'));
+}
+add_action('init', 'wpb_custom_new_menu');
+// END WP NAV MENU

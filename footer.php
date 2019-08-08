@@ -12,8 +12,12 @@
             <i class="icofont-phone mr-3"></i>
             <a href="tel:+32488921525">+32 488 92 15 25</a>
           </li>
-          <li>
-            <i class="icofont-google-map mr-3"></i> Sint-Katelijnevest 45, <br/>2000 Antwerpen, Belgium
+          <li class="adres">
+            <i class="icofont-google-map mr-3"></i>
+            <a href="https://goo.gl/maps/nbgqCY6AvJF5fnU7A" target="_blank">
+              Sint-Katelijnevest 45, <br/>
+              <span>2000 Antwerpen, Belgium</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -52,16 +56,22 @@
         <h3>Volg ons</h4>
         <ul class="socialmedia list-inline">
           <li class="list-inline-item">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/facebook.svg" alt="facebook">
+            <a href="https://www.facebook.com/Jarabarbershop-2018787554884911/" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/assets/images/facebook.svg" alt="facebook">
+            </a>
           </li>
           <li class="list-inline-item">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/instagram.svg" alt="instagram">
+            <a href="https://www.instagram.com/jara.barbershop/" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/assets/images/instagram.svg" alt="instagram">
+            </a>
           </li>
           <li class="list-inline-item">
             <img src="<?php bloginfo('template_url'); ?>/assets/images/snapchat.svg" alt="snapchat">
           </li>
           <li class="list-inline-item">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/whatsapp.svg" alt="whatsapp">
+            <a href="https://wa.me/32488921525" target="_blank">
+              <img src="<?php bloginfo('template_url'); ?>/assets/images/whatsapp.svg" alt="whatsapp">
+            </a>
           </li>
         </ul>
       </div>
@@ -84,7 +94,10 @@
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/plugins/moment.min.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/material-kit.min.js" type="text/javascript"></script>
+
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/main.js"></script>
+
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/scrolling-nav.js"></script>
 
 <?php wp_footer(); ?>
 </body>

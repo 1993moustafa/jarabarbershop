@@ -1,4 +1,4 @@
-<div class="slider py-5" style="background-image:url(<?php bloginfo('template_url'); ?>/assets/images/slider.jpg)">
+<div id="page-1" class="slider py-5" style="background-image:url(<?php bloginfo('template_url'); ?>/assets/images/slider.jpg)">
   <div class="container mt-5">
     <div class="row d-flex align-items-center">
       <div class="col-12 col-lg-8 text-center mx-auto">
