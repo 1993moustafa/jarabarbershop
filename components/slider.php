@@ -1,9 +1,10 @@
 <div class="slider py-5" style="background-image:url(<?php bloginfo('template_url'); ?>/assets/images/slider.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 text-center mx-auto">
-        <h1 class="m-0">Being a barber is about taking care of the people.</h1>
-        <p class="lead">Rem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+  <div class="container mt-5">
+    <div class="row d-flex align-items-center">
+      <div class="col-12 col-lg-8 text-center mx-auto">
+        <h1 class="m-0">JaraBarbershop Antwerpen</h1>
+        <p class="lead">JaraBarbershop is de plek voor haarverzoring. sinds 2015 is barbershop jara
+        geopend in het bruisend hart van Antwerpen.</p>
       </div>
     </div>
   </div>
