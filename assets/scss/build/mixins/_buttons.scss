@@ -124,6 +124,9 @@
   &.btn-danger {
     @include bmd-flat-button-variant($btn-danger-bg);
   }
+  &.btn-steelgray {
+    @include bmd-flat-button-variant($btn-steelgray-bg);
+  }
 }
 
 @mixin bmd-outline-button-color() {
@@ -133,7 +136,8 @@
   &.btn-outline-info,
   &.btn-outline-success,
   &.btn-outline-warning,
-  &.btn-outline-danger {
+  &.btn-outline-danger,
+  &.btn-steelgray {
     border-color: currentColor;
     border-style: solid;
     border-width: 1px;
@@ -160,6 +164,9 @@
   }
   &.btn-outline-danger {
     @include bmd-flat-button-variant($btn-danger-bg, $btn-danger-bg, $btn-danger-bg, $btn-danger-bg);
+  }
+  &.btn-outline-steelgray {
+    @include bmd-flat-button-variant($btn-steelgray-bg, $btn-steelgray-bg, $btn-steelgray-bg, $btn-steelgray-bg);
   }
 }
 
@@ -234,6 +241,9 @@
   &,
   &.btn-default{
     @include bmd-raised-button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+  }
+  &.btn-steelgray{
+    @include bmd-raised-button-variant($btn-steelgray-color, $btn-steelgray-bg, $btn-steelgray-border-color);
   }
 }
 
