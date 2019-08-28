@@ -1,5 +1,104 @@
-/*     brand Colors              */
 @import url(assets/css/icofont.css);
+.wpcf7 {
+  margin: 0;
+  padding: 0; }
+
+.wpcf7 input.wpcf7-text, .wpcf7 textarea {
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  color: #555555;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 10px; }
+
+.wpcf7-response-output {
+  margin: 2em 0.5em 1em;
+  padding: 15px;
+  border: 1px solid #FBEED5;
+  border-radius: 3px; }
+
+.wpcf7-mail-sent-ok {
+  background: #DFF0D8;
+  color: #468847; }
+
+.wpcf7-mail-sent-ng {
+  background: #F2DEDE;
+  color: #B94A48; }
+
+.wpcf7-spam-blocked {
+  background: #F2DEDE;
+  color: #B94A48; }
+
+.wpcf7-validation-errors {
+  background: #FCF8E3;
+  color: #C09853; }
+
+span.wpcf7-form-control-wrap {
+  position: relative;
+  display: block; }
+
+span.wpcf7-not-valid-tip {
+  color: #B94A48;
+  display: block;
+  font-size: 1em;
+  left: 0;
+  margin: 5px 0 10px;
+  padding: 0;
+  position: relative;
+  top: 0;
+  z-index: 100; }
+
+span.wpcf7-not-valid-tip-no-ajax {
+  color: #FF0000;
+  display: block;
+  font-size: 1em; }
+
+span.wpcf7-list-item {
+  display: block;
+  margin-left: 0.5em;
+  width: auto; }
+
+.wpcf7-display-none {
+  display: none; }
+
+.wpcf7 img.ajax-loader {
+  border: medium none;
+  margin-left: 4px;
+  vertical-align: middle; }
+
+.wpcf7 .watermark {
+  color: #888888; }
+
+.wpcf7 input.wpcf7-not-valid, .wpcf7 textarea.wpcf7-not-valid {
+  border: 1px solid #B94A48; }
+
+.wpcf7 input.wpcf7-submit {
+  cursor: pointer;
+  border: 0;
+  background-color: #9f7150;
+  padding: 10px;
+  width: 25%;
+  color: #fff; }
+  .wpcf7 input.wpcf7-submit:hover {
+    background-color: #1b1d27; }
+
+.wpcf7 label {
+  cursor: pointer;
+  width: auto;
+  display: block; }
+
+.wpcf7 .screen-reader-response {
+  border: 0 none;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*     brand Colors              */
 .carousel.carousel-full-nagivation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important; }
 
@@ -18963,7 +19062,8 @@ h6,
 .slider {
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  min-height: 500px; }
   .slider h1 {
     font-family: 'Playfair Display', serif;
     color: #9f7150; }
@@ -19047,117 +19147,6 @@ footer {
 
 .elementor .bdt-accordion-content {
   line-height: initial !important; }
-
-/***********basic************/
-/*Form width*/
-.wpcf7 {
-  text-align: left;
-  width: 90%; }
-
-/*Input Field widths*/
-.wpcf7-text, .wpcf7-textarea {
-  width: 100%;
-  border: 1px solid #e4e4e4;
-  border-radius: 4px; }
-
-.wpcf7-text {
-  height: 50px;
-  padding-left: 10px; }
-
-.wpcf7-text:focus, .wpcf7-textarea:focus {
-  border-color: #129FEA; }
-
-/*Label Font*/
-.wpcf7-form p {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif; }
-
-/*Submit button Font*/
-.wpcf7-submit {
-  width: 85%;
-  font-size: 15px !important;
-  background: #4a97c2 !important;
-  color: #fff !important;
-  padding: 20px; }
-
-/*Submit button Hover*/
-.wpcf7-submit:hover {
-  background: #3b86b0 !important; }
-
-/*Response messages - Error & Success*/
-.wpcf7-response-output {
-  margin-bottom: 30px !important; }
-
-/***********borders************/
-/*Form border*/
-.wpcf7 {
-  padding: 0 !important;
-  padding-bottom: 0px !important; }
-
-/*Input Field borders*/
-.wpcf7-text:focus, .wpcf7-textarea:focus {
-  border-color: #8F8F8F !important; }
-
-/*Submit button Background*/
-.wpcf7-submit {
-  background: #9f7150 !important;
-  color: #fff !important; }
-
-/*Submit button Hover*/
-.wpcf7-submit:hover {
-  background: #101117 !important; }
-
-/***********colors************/
-/*Submit button background & border*/
-.wpcf7-submit {
-  background-color: #9f7150 !important;
-  border: 0 !important;
-  color: #5A5050 !important;
-  font-weight: bold !important; }
-
-/*Submit button Hover styles*/
-.wpcf7-submit:hover {
-  background-color: #101117 !important;
-  border-color: #4CAF50 !important;
-  color: #4CAF50 !important; }
-
-/*Label Text color*/
-.wpcf7-form p {
-  color: #FFF; }
-
-.wpcf7-form label {
-  /*display: none;*/ }
-
-/*Input Field Text color*/
-.wpcf7-text, .wpcf7-textarea {
-  color: #777; }
-
-/****background-images********/
-/*Form background*/
-.wpcf7 {
-  /*background-image: url(http://i.imgur.com/iAFPf0G.jpg);*/
-  background-position: center;
-  background-size: cover; }
-
-/*Label Text color*/
-.wpcf7-form p {
-  /*display: none;*/
-  /*color: #000000;*/ }
-
-/*Submit button background & border*/
-.wpcf7-submit {
-  border: 2px solid #FFFFFF !important;
-  color: #FFFFFF !important; }
-
-/*Submit button Hover styles*/
-.wpcf7-submit:hover {
-  border-color: transparent !important;
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  color: #FFFFFF !important; }
-
-/*Input Field border*/
-.wpcf7-text:focus, .wpcf7-textarea:focus {
-  border-color: #5A3D3D !important; }
 
 body[data-aos-duration='50'] [data-aos], [data-aos][data-aos][data-aos-duration='50'] {
   transition-duration: 50ms; }

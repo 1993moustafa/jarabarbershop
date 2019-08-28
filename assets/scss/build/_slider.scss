@@ -2,6 +2,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 500px;
   h1 {
     font-family: 'Playfair Display', serif;
     color: $santafe;
@@ -10,6 +11,7 @@
     }
 
   }
+
   .lead {
     color: $white;
   }

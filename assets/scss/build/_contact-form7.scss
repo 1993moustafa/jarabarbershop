@@ -1,40 +1,41 @@
-div.wpcf7 {
+.wpcf7 {
   margin: 0;
   padding: 0;
 }
-div.wpcf7 input.wpcf7-text, div.wpcf7 textarea {
+.wpcf7 input.wpcf7-text, .wpcf7 textarea {
   border: 1px solid #CCCCCC;
   border-radius: 3px;
   color: #555555;
   display: inline-block;
   font-size: 1em;
   line-height: 1.5;
-  padding: 4px;
+  padding: 10px;
 }
-div.wpcf7-response-output {
+.wpcf7-response-output {
   margin: 2em 0.5em 1em;
   padding: 15px;
   border: 1px solid #FBEED5;
   border-radius: 3px;
 }
-div.wpcf7-mail-sent-ok {
+.wpcf7-mail-sent-ok {
   background:#DFF0D8;
   color:#468847;
 }
-div.wpcf7-mail-sent-ng {
+.wpcf7-mail-sent-ng {
   background:#F2DEDE;
   color:#B94A48;
 }
-div.wpcf7-spam-blocked {
+.wpcf7-spam-blocked {
   background:#F2DEDE;
   color:#B94A48;
 }
-div.wpcf7-validation-errors {
+.wpcf7-validation-errors {
   background:#FCF8E3;
   color: #C09853;
 }
 span.wpcf7-form-control-wrap {
   position: relative;
+  display: block;
 }
 span.wpcf7-not-valid-tip {
   color: #B94A48;
@@ -60,26 +61,35 @@ span.wpcf7-list-item {
 .wpcf7-display-none {
   display: none;
 }
-div.wpcf7 img.ajax-loader {
+.wpcf7 img.ajax-loader {
   border: medium none;
   margin-left: 4px;
   vertical-align: middle;
 }
-div.wpcf7 .watermark {
+.wpcf7 .watermark {
   color: #888888;
 }
-div.wpcf7 input.wpcf7-not-valid, div.wpcf7 textarea.wpcf7-not-valid {
+.wpcf7 input.wpcf7-not-valid, .wpcf7 textarea.wpcf7-not-valid {
   border:1px solid #B94A48
 }
-div.wpcf7 input.wpcf7-submit {
+.wpcf7 input.wpcf7-submit {
   cursor: pointer;
+  border: 0;
+  background-color: #9f7150;
+  padding: 10px;
+  width: 25%;
+  color: #fff;
+  &:hover{
+    background-color: #1b1d27;
+  }
+
 }
-div.wpcf7 label {
+.wpcf7 label {
   cursor: pointer;
   width:auto;
   display:block;
 }
-div.wpcf7 .screen-reader-response {
+.wpcf7 .screen-reader-response {
   border: 0 none;
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
